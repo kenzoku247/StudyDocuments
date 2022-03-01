@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="De2_TuDien.Search">
+  <grid id="27dc6" binding="panelMain" layout-manager="GridLayoutManager" row-count="10" column-count="8" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="7" width="568" height="328"/>
+    </constraints>
+    <properties>
+      <preferredSize width="480" height="328"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="acba8" class="javax.swing.JTextField" binding="en_text">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="5" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="192d2" class="javax.swing.JTextField" binding="vn_text">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="5" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="840f6" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="English"/>
+        </properties>
+      </component>
+      <component id="7056a" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Vietnamese"/>
+        </properties>
+      </component>
+      <component id="62e22" class="javax.swing.JButton" binding="add_bt">
+        <constraints>
+          <grid row="8" column="4" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Add"/>
+        </properties>
+      </component>
+      <component id="6008f" class="javax.swing.JButton" binding="search_bt">
+        <constraints>
+          <grid row="8" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Search"/>
+        </properties>
+      </component>
+      <component id="a89f" class="javax.swing.JButton" binding="yes_bt">
+        <constraints>
+          <grid row="7" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+          <text value="Yes"/>
+        </properties>
+      </component>
+      <component id="948d3" class="javax.swing.JButton" binding="no_bt">
+        <constraints>
+          <grid row="7" column="4" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="No"/>
+        </properties>
+      </component>
+      <component id="3f8a1" class="javax.swing.JLabel" binding="notice_text">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="6" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Tu nay chua co trong tu dien. Ban co muon them tu nay vao tu dien khong ?"/>
+        </properties>
+      </component>
+      <component id="db974" class="javax.swing.JLabel" binding="Title">
+        <constraints>
+          <grid row="1" column="2" row-span="2" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="10" height="99"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Dictionary"/>
+        </properties>
+      </component>
+      <hspacer id="c6a26">
+        <constraints>
+          <grid row="3" column="7" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="ea3d8">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <vspacer id="d70e4">
+        <constraints>
+          <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="5b4cc">
+        <constraints>
+          <grid row="9" column="4" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="bd8fe" class="javax.swing.JButton" binding="cancel_bt">
+        <constraints>
+          <grid row="8" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Cancel"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
