@@ -1,0 +1,46 @@
+#!/bin/bash
+# quota
+sudo apt update
+sudo apt install quota -y
+cat <<-'EOF' > /etc/fstab
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+# / was on /dev/ubuntu-vg/ubuntu-lv during curtin installation
+/dev/disk/by-id/dm-uuid-LVM-IwjKsEJcTsf2Lwi1rNh9aUanMLK2ScoDOD0Nns1PPBD0ZirG81wJlb86IXJdB8vh / ext4 usrquota,grpquota 0 1
+# /boot was on /dev/sda2 during curtin installation
+/dev/disk/by-uuid/871fe80c-ea4c-4c63-93d9-483d36f36de2 /boot ext4 defaults 0 1
+/swap.img       none    swap    sw      0       0
+EOF
+sudo mount -o remount /
+sudo quotacheck -ugm /
+sudo quotaon -v /
+sudo setquota -u user1 500M 500M 0 0 /
+echo "=====DONE_QUOTA====="
+# sudo repquota -s / 		(use this command to check only)
+# samba
+sudo apt install samba -y
+cat <<-'EOF' > /etc/samba/smb.conf
+[global]
+        workgroup = WORKGROUP
+        security = user
+        passdb backend = tdbsam
+        unix charset = UTF-8
+        hosts allow = 192.168.1.
+        map to guest = Bad User
+[public]
+        path = /samba
+        writable = yes
+        guest ok = yes
+        guest only = yes
+        force create mode = 777
+        force directory mode = 777
+EOF
+sudo service smbd restart
+sudo ufw allow samba
+echo "=====DONE_SAMBA====="
+# win + r \\ip_address

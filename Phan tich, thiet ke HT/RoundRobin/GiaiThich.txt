@@ -1,0 +1,6 @@
+Hàm processData (tham số truyền vào là số lượng tiến trình)
+    Biến danh sách process_data được tạo mới. Là nơi chứa các biến danh sách con chứa các thông tin nhập vào như: id tiến trình, thời gian xuất hiện, thời gian thực hiện, trạng thái tiến trình (0/1)
+    Mục đích của hàm này là nhập các dữ liệu input vào biến process_data và trả về hàm schedulingProcess
+
+Hàm schedulingProcess (tham số truyền vào là biến danh sách process_data, và thời gian q)
+    Biến start_time
