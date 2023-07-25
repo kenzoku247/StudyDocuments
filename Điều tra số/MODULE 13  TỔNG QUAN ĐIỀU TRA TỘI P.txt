@@ -1,0 +1,14 @@
+MODULE 13 : TỔNG QUAN ĐIỀU TRA TỘI PHẠM EMAIL
+Trong vài thập kỷ qua, các dịch vụ email đã được sử dụng rộng rãi để liên lạc trên toàn thế giới nhằm trao đổi văn bản và tin nhắn đa phương tiện. Tuy nhiên, điều này cũng khiến email trở thành một công cụ mạnh mẽ để tội phạm mạng phát tán các thông báo độc hại và thực hiện các hoạt động bất hợp pháp. Mô-đun này giúp bạn làm quen với chủ đề tội phạm email và cách chúng xảy ra. Nó chủ yếu tập trung vào các luật của Hoa Kỳ về giảm nhẹ tội phạm email và các bước mà điều tra viên cần tuân theo trong cuộc điều tra tội phạm email.
+Mục tiêu của mô-đun này là:
+13.1 Tìm hiểu cơ bản về Email
+•	Giới thiệu về Hệ thống Email
+•	Các thành phần liên quan đến giao tiếp Email
+•	Cách giao tiếp qua Email hoạt động
+•	Các thành phần của một tin nhắn Email
+13.2 Tìm hiểu về điều tra tội phạm Email và các bước
+•	Giới thiệu về điều tra tội phạm Email
+•	Các bước điều tra tội phạm Email
+13.3 Luật Chống Tội phạm Email của Hoa Kỳ
+•	Luật chống tội phạm email của Hoa Kỳ: Đạo luật CAN-SPAM
+
