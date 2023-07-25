@@ -1,0 +1,24 @@
+Deta = -12
+==> Loại DC = 4
+2^i + Delta - 1
+Biên độ delta = 3
+Phần 1: 101
+Phần 2: 0011
+
+==> 1010011
+
+
+RLC =(2,-2)
+AC = -2 ==> Loại AC = 2
+Tra bảng HM 2/2:
+Phần 1 : 11111000
+Tổng độ dài từ mã = 10
+Biên độ AC = 2^2 - 2 - 1 = 1
+Phần 2: 01
+==> VLC(RLC) = 1111100001
+
+
+
+EOB = 1010
+
+BTVN:
